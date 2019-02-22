@@ -8,3 +8,27 @@ $(window).on('scroll', function () {
     navbar.classList.remove("sticky");
   }
 });
+
+var winWidth = $(window).width();
+console.log('winWidth', winWidth);
+function goldRatio(level) {
+  var dim = winWidth;
+  for (var i = 1; i < level; i++) {
+    dim *= 0.618;
+  }
+  return dim;
+}
+
+$('#navbar').width('600');
+
+$('#logo-container').width(goldRatio(3));
+$('#logo-container').css('margin-bottom', goldRatio(6));
+$('#logo-container').css('padding', goldRatio(9));
+
+$('#name').css('margin-bottom', goldRatio(100000));
+
+
+
+
+
+
