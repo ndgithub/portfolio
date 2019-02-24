@@ -1,10 +1,8 @@
 body {
-  height: 5000px;
-  font-family: 'NTR', 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'NTR', sans-serif;
   color: #666667;
   background: url('../images/grid_bg1.jpg');
-  background-position: -100px -100px;
-  background-size: 125%;
+  background-color: #fcfcff;
 }
 
 .sticky {
@@ -13,13 +11,22 @@ body {
   width: 100%;
 }
 
+#wrapper {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .main {
   padding: 16px;
   height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#overlay {
+  height: 100%;
   background-color: rgb(256, 256, 256, 0.95);
 }
 
@@ -29,11 +36,13 @@ body {
 
 #name {
   /* border: 2px solid #000000; */
-  font-size: 72px;
+  font-size: 60px;
   text-align: center;
   line-height: 60px;
-  font-weight: bold;
-  font-family: 'NTR', sans-serif;
+  font-weight: 700;
+  font-family: 'Quicksand Medium', 'NTR', sans-serif;
+  color: #333334;
+  margin-bottom: 10px;
 }
 
 #subtitle {
@@ -42,6 +51,7 @@ body {
   font-weight: bold;
   color: #ff0000;
   margin-top: -10px;
+  margin-bottom: 120px;
 }
 
 #navbar {
@@ -52,6 +62,7 @@ body {
   margin: auto;
   font-weight: bold;
   font-size: 20px;
+  max-width: 600px;
 }
 
 .navItem:hover {
@@ -59,17 +70,19 @@ body {
 }
 
 #logo-container {
-  margin: auto;
-  border-radius: 4px;
   padding-bottom: -40px;
+  text-align: center;
 }
 
 #scroll-signal {
-  display: block;
   position: absolute;
   bottom: 0;
   width: 100%;
   margin-bottom: 30px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .arrows {
@@ -81,13 +94,134 @@ body {
 }
 
 #arrow1 {
-  color: #cccccf;
+  color: #ffcccc;
+  animation-name: color-change;
+  animation-duration: 10s;
 }
 
 #arrow2 {
-  color: #99999a;
+  color: #ff9999;
+  animation-name: color-change;
+  animation-duration: 10s;
 }
 
 #arrow3 {
-  color: #666667
+  color: #ff3333;
+  animation-name: color-change;
+  animation-duration: 10s;
+}
+
+@keyframes color-change {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#portfolio {
+  margin-top: 100px;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+#port-underline {
+  height: 4px;
+  background: #ff0000;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  border-radius: 2px;
+}
+
+#name-underline {
+  height: 4px;
+  /* background: #ff0000; */
+  width: 100px;
+  border-radius: 2px;
+}
+
+.project {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  border: 1px solid #cccccc;
+}
+
+.project-info {}
+
+.project-title {
+  font-size: 36px;
+}
+
+.project-description {
+  margin-bottom: 28px;
+}
+
+.project-links {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.link-container {
+  width: 45%;
+  display: inline-block;
+}
+
+.link {
+  text-align: center;
+  display: inline-block;
+  width: 75%;
+  padding: 8px;
+}
+
+.github-link {
+  border: 1px solid #666667;
+}
+
+.website-link {
+  background: #cccccc;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.link {
+  font-weight: bold;
+}
+
+.link:hover {
+  background: #ff0000;
+  color: white;
+}
+
+/* Under the col-sm bootstrap breakpoint */
+
+@media only screen and (max-width: 768px) {
+  body {}
+  #name {
+    font-size: 54px;
+  }
+  #subtitle {
+    font-size: 18px;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .project-links {
+    width: 100%;
+    position: static;
+  }
 }
