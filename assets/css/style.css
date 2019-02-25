@@ -129,6 +129,9 @@ body {
 
 h1 {
   margin-bottom: 0px;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #333334;
 }
 
 #port-underline {
@@ -156,14 +159,21 @@ img {
   border: 1px solid #cccccc;
 }
 
-.project-info {}
+.project-info {
+  margin-left: -14px;
+  margin-top: -10px;
+}
 
 .project-title {
-  font-size: 36px;
+  font-size: 24px;
+  color: #333334;
+  font-weight: bold;
+  margin-bottom: -6px;
+  padding-top: 4px;
 }
 
 .project-description {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .project-links {
@@ -222,6 +232,8 @@ a:hover {
     font-size: 18px;
   }
   .project-info {
+    margin-left: 0px;
+    margin-top: 0px;
     text-align: center;
   }
   .project-links {
