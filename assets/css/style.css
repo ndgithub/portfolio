@@ -3,6 +3,7 @@ body {
   color: #666667;
   background: url('../images/grid_bg1.jpg');
   background-color: #fcfcff;
+  overflow-x: hidden;
 }
 
 .sticky {
@@ -15,6 +16,7 @@ body {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
+  padding: 16px;
 }
 
 .main {
@@ -42,7 +44,7 @@ body {
   font-weight: 700;
   font-family: 'Quicksand Medium', 'NTR', sans-serif;
   color: #333334;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 #subtitle {
@@ -121,7 +123,7 @@ body {
 }
 
 #portfolio {
-  margin-top: 100px;
+  margin-top: 16px;
   text-align: left;
 }
 
@@ -212,7 +214,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
   body {}
   #name {
-    font-size: 54px;
+    font-size: 48px;
   }
   #subtitle {
     font-size: 18px;
@@ -223,5 +225,8 @@ a:hover {
   .project-links {
     width: 100%;
     position: static;
+  }
+  #navbar {
+    font-size: 16px;
   }
 }
