@@ -1,7 +1,6 @@
 body {
   font-family: 'Quicksand', 'NTR', sans-serif;
   color: #666667;
-  background: url('../images/grid_bg1.jpg');
   background-color: #fcfcff;
   overflow-x: hidden;
 }
@@ -34,6 +33,7 @@ body {
 
 #center-div {
   margin-top: -20vh;
+  text-align: center;
 }
 
 #name {
@@ -53,7 +53,6 @@ body {
   font-weight: bold;
   color: #ff0000;
   margin-top: -10px;
-  margin-bottom: 120px;
 }
 
 #navbar {
@@ -74,6 +73,20 @@ body {
 #logo-container {
   padding-bottom: -40px;
   text-align: center;
+  border: 1px solid #cccccc;
+  margin-bottom: 100px;
+  display: inline-block;
+  /* -moz-box-shadow: 1px 1px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc; */
+  box-shadow: 1px 1px 2px 1px #ccc;
+  background: url('../images/grid_bg1.jpg');
+}
+
+#logo-container-overlay {
+  height: 100%;
+  width: 100%;
+  padding: 32px 48px 32px 48px;
+  background-color: rgb(256, 256, 256, 0.95);
 }
 
 #scroll-signal {
