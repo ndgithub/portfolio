@@ -87,7 +87,8 @@ body {
   height: 100%;
   width: 100%;
   padding: 32px 48px 32px 48px;
-  background-color: rgb(256, 256, 256, 0.90);
+  background-color: rgb(256, 256, 256, 0.95);
+  background-color: rgba(256, 256, 256, 0.95);
 }
 
 #scroll-signal {
