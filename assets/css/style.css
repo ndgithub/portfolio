@@ -20,10 +20,6 @@ body {
 
 .main {
   padding: 16px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #overlay {
@@ -32,24 +28,23 @@ body {
 }
 
 #center-div {
-  margin-top: -20vh;
-  text-align: center;
+  border-right: 1px solid #333333;
+  padding-right: 16px;
 }
 
 #name {
   /* border: 2px solid #000000; */
-  font-size: 60px;
-  text-align: center;
+  font-size: 40px;
   line-height: 60px;
   font-weight: 700;
   font-family: 'Quicksand Medium', 'NTR', sans-serif;
-  color: #333334;
+  color: #000033;
   margin-bottom: 0px;
 }
 
 #subtitle {
-  text-align: center;
-  font-size: 24px;
+  text-align: right;
+  font-size: 16px;
   font-weight: bold;
   color: #ff0000;
   margin-top: -10px;
@@ -57,84 +52,47 @@ body {
 
 #navbar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  margin: auto;
-  font-weight: bold;
-  font-size: 20px;
   max-width: 600px;
+  text-align: right;
+  color: #000033;
 }
 
-.navItem:hover {
-  border-bottom: 4px solid #ff0000;
+.main-nav-item {
+  font-weight: 900;
+  font-family: 'Quicksand Medium';
+}
+
+.nav-item-span {
+  padding: 8px;
+}
+
+.nav-item-span:hover {
+  color: white;
+  background: red;
+}
+
+.nav-item {
+  padding: 8px;
+}
+
+.nav-item:hover {}
+
+#about-me-button {
+  margin-bottom: 24px;
 }
 
 #logo-container {
-  padding-bottom: -40px;
-  text-align: center;
-  border: 1px solid #cccccc;
-  margin-bottom: 100px;
-  display: inline-block;
-  -moz-box-shadow: 1px 1px 2px 1px #ccc;
+  text-align: right;
+  margin-bottom: 24px;
+  padding-right: 8px;
+  /* -moz-box-shadow: 1px 1px 2px 1px #ccc;
   -webkit-box-shadow: 1px 1px 2px 1px #ccc;
   box-shadow: 1px 1px 2px 1px #ccc;
   background: url('../images/grid_bg1.jpg');
-  background-position: center;
-}
-
-#logo-container-overlay {
-  height: 100%;
-  width: 100%;
-  padding: 32px 48px 32px 48px;
-  background-color: rgb(256, 256, 256, 0.95);
-  background-color: rgba(256, 256, 256, 0.95);
-}
-
-#scroll-signal {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 30px;
-  padding-right: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.arrows {
-  text-align: center;
-  transform: rotate(270deg);
-  font-size: 72px;
-  line-height: 27px;
-  font-weight: bold;
-}
-
-#arrow1 {
-  color: #ffcccc;
-  animation-name: color-change;
-  animation-duration: 10s;
-}
-
-#arrow2 {
-  color: #ff9999;
-  animation-name: color-change;
-  animation-duration: 10s;
-}
-
-#arrow3 {
-  color: #ff3333;
-  animation-name: color-change;
-  animation-duration: 10s;
-}
-
-@keyframes color-change {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  background-position: center; */
 }
 
 #portfolio {
@@ -247,7 +205,7 @@ a:hover {
     font-size: 40px;
   }
   #subtitle {
-    font-size: 16px;
+    font-size: 14px;
   }
   .project-info {
     margin-left: 0px;
