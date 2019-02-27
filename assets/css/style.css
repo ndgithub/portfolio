@@ -76,17 +76,18 @@ body {
   border: 1px solid #cccccc;
   margin-bottom: 100px;
   display: inline-block;
-  /* -moz-box-shadow: 1px 1px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc; */
+  -moz-box-shadow: 1px 1px 2px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 2px 1px #ccc;
   box-shadow: 1px 1px 2px 1px #ccc;
   background: url('../images/grid_bg1.jpg');
+  background-position: center;
 }
 
 #logo-container-overlay {
   height: 100%;
   width: 100%;
   padding: 32px 48px 32px 48px;
-  background-color: rgb(256, 256, 256, 0.95);
+  background-color: rgb(256, 256, 256, 0.90);
 }
 
 #scroll-signal {
@@ -239,10 +240,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
   body {}
   #logo-container-overlay {
-    height: 100%;
-    width: 100%;
     padding: 16px 24px 16px 24px;
-    background-color: rgb(256, 256, 256, 0.95);
   }
   #name {
     font-size: 40px;
