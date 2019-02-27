@@ -1,5 +1,11 @@
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
+console.log('hy');
+
+$(".main-nav-item").hover(function (event) {
+  $(this).css('cursor', 'pointer');
+}, function () {
+});
 
 // $(window).on('scroll', function () {
 //   if (window.pageYOffset >= sticky) {
