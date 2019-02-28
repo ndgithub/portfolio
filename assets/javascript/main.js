@@ -1,11 +1,61 @@
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-console.log('hy');
+var aboutActive = false;
+var portActive = true;
 
-$(".main-nav-item").hover(function (event) {
-  $(this).css('cursor', 'pointer');
+
+$("#port-span").css('background', 'red');
+
+
+$("#port-span").on('click', function () {
+  $("#about-me").css('display', 'none');
+  $("#portfolio").css('display', 'block');
+  portActive = true;
+  aboutActive = false;
+  $(this).css({ 'background': 'red', 'color': 'white' });
+  $('#about-span').css({ 'background': 'white', 'color': 'black' });
+})
+
+$("#about-span").on('click', function () {
+  $("#about-me").css('display', 'block');
+  $("#portfolio").css('display', 'none');
+  aboutActive = true;
+  portActive = false;
+  $(this).css({ 'background': 'red', 'color': 'white' });
+  $('#port-span').css({ 'background': 'white', 'color': 'black' });
+})
+
+
+$("#port-span").hover(function (event) {
+  if (portActive) {
+    $(this).css('cursor', 'default');
+  } else {
+    $(this).css('color', 'red')
+    $(this).css('cursor', 'pointer');
+  }
 }, function () {
+  if (portActive) {
+    $(this).css('cursor', 'default');
+  } else {
+    $(this).css('color', 'black')
+  }
 });
+
+$("#about-span").hover(function (event) {
+  if (aboutActive) {
+  } else {
+    $(this).css('color', 'red');
+    $(this).css('cursor', 'pointer');
+  }
+}, function () {
+  if (aboutActive) {
+    $(this).css('cursor', 'default');
+  } else {
+    $(this).css('color', 'black')
+  }
+});
+
+
 
 // $(window).on('scroll', function () {
 //   if (window.pageYOffset >= sticky) {
