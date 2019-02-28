@@ -2,35 +2,31 @@ body {
   font-family: 'Quicksand', 'NTR', sans-serif;
   background-color: #fefeff;
   overflow-x: hidden;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.project-screenshot img {
-  border: 2px solid #00000f;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #wrapper {
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 16px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .main {
   padding: 16px;
+  min-width: 300px;
+}
+
+h1 {
+  margin-bottom: 0px;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #333334;
 }
 
 #id-photo {
   width: 200px;
-}
-
-#overlay {
-  max-width: 1400px;
 }
 
 #center-div {
@@ -112,89 +108,71 @@ body {
   background-position: center; */
 }
 
+#sections {
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
 #portfolio {
   text-align: left;
 }
 
-#about-me {
-  margin-top: 16px;
-  text-align: left;
-  display: none;
-}
-
-h1 {
-  margin-bottom: 0px;
-  font-size: 36px;
-  font-weight: bolder;
-  color: #333334;
-}
-
-#port-underline {
-  height: 4px;
-  background: #ff0000;
-  width: 100%;
-  margin: 10px 0px 0px 0px;
-  border-radius: 2px;
-}
-
-#name-underline {
-  height: 4px;
-  /* background: #ff0000; */
-  width: 100px;
-  border-radius: 2px;
-}
-
 .project {
-  margin-top: 22px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32px;
 }
 
-img {
-  width: 100%;
-  border: 1px solid #cccccc;
+.project-screenshot img {
+  /* border: 2px solid #00000f; */
+  width: 300px;
+}
+
+.project-screenshot {
+  border: 2px solid #00000f;
+  width: 300px;
 }
 
 .project-info {
-  margin-left: -14px;
-  margin-top: -10px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-left: 16px;
 }
 
 .project-title {
   font-size: 24px;
-  color: #333334;
+  color: #00000f;
   font-weight: bold;
-  margin-bottom: -6px;
-  padding-top: 4px;
+  padding-top: 0px;
 }
+
+img {}
 
 .project-description {
-  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
+  color: #66666f;
 }
 
-.project-links {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
+.project-links {}
 
-.link-container {
-  width: 45%;
-  display: inline-block;
-}
+.link-container {}
 
 .link {
-  text-align: center;
-  display: inline-block;
-  width: 75%;
-  padding: 8px;
+  float: left;
+  font-size: 16px;
+  font-family: 'Quicksand';
+  font-weight: 400;
 }
 
 .github-link {
-  border: 1px solid #666667;
+  padding: 0px 16px 0px 16px;
 }
 
 .website-link {
-  background: #cccccc;
+  border-right: 2px solid #ff0000;
+  padding: 0px 16px 0px 0px;
 }
 
 a {
@@ -216,18 +194,18 @@ a:hover {
   border: none;
 }
 
+#about-me {
+  margin-top: 16px;
+  text-align: left;
+  display: none;
+}
+
 /* Under the col-sm bootstrap breakpoint */
 
-@media only screen and (max-width: 768px) {
-  body {}
+@media only screen and (max-width: 960px) {
+  /* body {}
   #logo-container-overlay {
     padding: 16px 24px 16px 24px;
-  }
-  #name {
-    font-size: 40px;
-  }
-  #subtitle {
-    font-size: 14px;
   }
   .project-info {
     margin-left: 0px;
@@ -240,11 +218,5 @@ a:hover {
   }
   #navbar {
     font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  #name {
-    font-size: 32px;
-  }
+  } */
 }
