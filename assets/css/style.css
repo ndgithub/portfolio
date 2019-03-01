@@ -13,6 +13,10 @@ body {
   width: 100%;
 }
 
+.outside-links-mobile {
+  display: none;
+}
+
 .left-section {
   padding: 16px;
   min-width: 300px;
@@ -267,28 +271,28 @@ a:hover {
   #subtitle {
     text-align: center;
   }
-  .left-section {}
-  #right-section {}
-  .project {}
   #center-div {
     border: none;
   }
-  #navbar {
-    /* flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 600px;
-    text-align: right;
-    color: #000033; */
-  }
+  #navbar {}
   .main-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   .outside-links {
+    display: none;
+  }
+  .outside-links-mobile {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  #center-div {
+    padding: 0px;
+  }
+  #logo-container {
+    padding: 0px;
   }
 }
