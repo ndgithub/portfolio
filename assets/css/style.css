@@ -278,7 +278,7 @@ a:hover {
   .main-links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .outside-links {
     display: none;
@@ -287,7 +287,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
   #center-div {
     padding: 0px;
