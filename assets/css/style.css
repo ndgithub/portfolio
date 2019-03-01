@@ -13,7 +13,7 @@ body {
   width: 100%;
 }
 
-.main {
+.left-section {
   padding: 16px;
   min-width: 300px;
 }
@@ -40,6 +40,8 @@ h1 {
   color: #000033;
   width: 100%;
   font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 8px;
 }
 
 #subtitle {
@@ -108,10 +110,14 @@ h1 {
   background-position: center; */
 }
 
-#sections {
+#right-section {
   padding-left: 16px;
+  padding-right: 16px;
   margin-top: 16px;
+  min-width: 660px;
 }
+
+.pages {}
 
 #portfolio {
   text-align: left;
@@ -120,17 +126,16 @@ h1 {
 .project {
   display: flex;
   flex-direction: row;
+  justify-content: start;
   margin-bottom: 32px;
 }
 
-.project-screenshot img {
-  /* border: 2px solid #00000f; */
-  width: 300px;
-}
+.project-screenshot {}
 
-.project-screenshot {
-  border: 2px solid #00000f;
+.project-screenshot img {
   width: 300px;
+  height: auto;
+  border: 2px solid #00000f;
 }
 
 .project-info {
@@ -155,24 +160,26 @@ img {}
   color: #66666f;
 }
 
-.project-links {}
+.project-links {
+  display: flex;
+  flex-direction: row;
+}
 
 .link-container {}
 
 .link {
-  float: left;
   font-size: 16px;
   font-family: 'Quicksand';
   font-weight: 400;
 }
 
 .github-link {
-  padding: 0px 16px 0px 16px;
+  padding: 0px 8px 0px 8px;
 }
 
 .website-link {
   border-right: 2px solid #ff0000;
-  padding: 0px 16px 0px 0px;
+  padding: 0px 8px 0px 0px;
 }
 
 a {
@@ -184,14 +191,8 @@ a:hover {
   text-decoration: none;
 }
 
-.link {
-  font-weight: bold;
-}
-
 .link:hover {
-  background: #ff0000;
-  color: white;
-  border: none;
+  color: red;
 }
 
 #about-me {
@@ -200,23 +201,94 @@ a:hover {
   display: none;
 }
 
-/* Under the col-sm bootstrap breakpoint */
-
 @media only screen and (max-width: 960px) {
-  /* body {}
-  #logo-container-overlay {
-    padding: 16px 24px 16px 24px;
+  #name {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 6px;
   }
-  .project-info {
-    margin-left: 0px;
-    margin-top: 0px;
+  #subtitle {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-top: -8px;
+  }
+  .left-section {
+    min-width: 250px;
+  }
+  #right-section {
+    padding-left: 16px;
+    margin-top: 16px;
+    min-width: 350px;
+  }
+  .project {}
+  .project-title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* 600 is the total of min-widths for left and right section (when they stop collapsing)*/
+  #wrapper {}
+  #name {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+  #subtitle {}
+  .left-section {
+    min-width: 300px;
+  }
+  #right-section {}
+  .project {
+    flex-direction: column;
     text-align: center;
   }
-  .project-links {
+  .project-screenshot img {
     width: 100%;
-    position: static;
+  }
+  .project-links {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  /* 600 is the total of min-widths for left and right section (when they stop collapsing)*/
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  #name {
+    text-align: center;
+  }
+  #subtitle {
+    text-align: center;
+  }
+  .left-section {}
+  #right-section {}
+  .project {}
+  #center-div {
+    border: none;
   }
   #navbar {
-    font-size: 16px;
-  } */
+    /* flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+    text-align: right;
+    color: #000033; */
+  }
+  .main-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .outside-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
