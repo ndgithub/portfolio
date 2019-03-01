@@ -89,7 +89,7 @@ h1 {
 }
 
 .nav-item-span:hover {
-  color: red;
+  color: #99999f;
 }
 
 .nav-item {
@@ -159,9 +159,9 @@ h1 {
 img {}
 
 .project-description {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 16px;
+  font-family: Roboto, Helvetica, sans-serif;
   color: #66666f;
+  margin-bottom: 8px;
 }
 
 .project-links {
@@ -173,8 +173,8 @@ img {}
 
 .link {
   font-size: 16px;
-  font-family: 'Quicksand';
-  font-weight: 400;
+  font-family: Roboto, 'Quicksand Medium';
+  color: #33333f;
 }
 
 .github-link {
@@ -182,7 +182,7 @@ img {}
 }
 
 .website-link {
-  border-right: 2px solid #ff0000;
+  border-right: 1px solid #ff0000;
   padding: 0px 8px 0px 0px;
 }
 
@@ -196,7 +196,7 @@ a:hover {
 }
 
 .link:hover {
-  color: red;
+  color: #99999f;
 }
 
 #about-me {
