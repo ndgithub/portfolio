@@ -249,6 +249,9 @@ a:hover {
     flex-direction: column;
     text-align: center;
   }
+  .project-screenshot {
+    margin-bottom: 8px;
+  }
   .project-screenshot img {
     width: 100%;
   }
