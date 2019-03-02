@@ -270,9 +270,11 @@ a:hover {
   }
   #name {
     text-align: center;
+    font-size: 48px;
   }
   #subtitle {
     text-align: center;
+    font-size: 20px;
   }
   #center-div {
     border: none;
