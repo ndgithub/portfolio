@@ -1,5 +1,5 @@
 body {
-  font-family: 'Quicksand', 'NTR', sans-serif;
+  font-family: Roboto, 'Quicksand', 'NTR', sans-serif;
   background-color: #fefeff;
   overflow-x: hidden;
   max-width: 1200px;
@@ -139,7 +139,7 @@ h1 {
 .project-screenshot img {
   width: 300px;
   height: auto;
-  border: 2px solid #00000f;
+  border: 1px solid #00000f;
 }
 
 .project-info {
@@ -151,7 +151,7 @@ h1 {
 
 .project-title {
   font-size: 24px;
-  color: #00000f;
+  color: #111;
   font-weight: bold;
   padding-top: 0px;
 }
@@ -160,7 +160,7 @@ img {}
 
 .project-description {
   font-family: Roboto, Helvetica, sans-serif;
-  color: #66666f;
+  color: #888;
   margin-bottom: 8px;
 }
 
@@ -200,12 +200,25 @@ a:hover {
 }
 
 #about-me {
-  margin-top: 16px;
-  text-align: left;
   display: none;
-  font-family: 'Quicksand', 'Roboto', Helvetica, sans-serif;
+  flex-direction: row;
+  font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  justify-content: flex-start;
+}
+
+#about-me-desc {
+  padding-left: 16px;
+}
+
+#image-container {
+  width: 500px;
+  ;
+}
+
+img#profile-pic {
+  width: 100%;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 960px) {
