@@ -160,13 +160,14 @@ img {}
 
 .project-description {
   font-family: Roboto, Helvetica, sans-serif;
-  color: #888;
+  color: #666;
   margin-bottom: 8px;
 }
 
 .project-links {
   display: flex;
   flex-direction: row;
+  color: #666;
 }
 
 .link-container {}
@@ -213,7 +214,6 @@ a:hover {
 
 #image-container {
   width: 500px;
-  ;
 }
 
 img#profile-pic {
