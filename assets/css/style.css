@@ -17,6 +17,10 @@ body {
   display: none;
 }
 
+.outside-links {
+  margin-bottom: 4px;
+}
+
 .left-section {
   padding: 16px;
   min-width: 300px;
@@ -167,13 +171,12 @@ img {}
 .project-links {
   display: flex;
   flex-direction: row;
-  color: #666;
 }
 
 .link-container {}
 
 .link {
-  font-size: 16px;
+  font-size: px;
   font-family: Roboto, 'Quicksand Medium', Arial;
   color: #33333f;
 }
@@ -184,6 +187,11 @@ img {}
 
 .website-link {
   border-right: 1px solid #ff0000;
+  padding: 0px 8px 0px 0px;
+}
+
+#micro-measure .website-link {
+  border: none;
   padding: 0px 8px 0px 0px;
 }
 
