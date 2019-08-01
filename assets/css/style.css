@@ -185,13 +185,12 @@ img {}
   padding: 0px 8px 0px 8px;
 }
 
-.website-link {
-  border-right: 1px solid #ff0000;
+.github-link-no-web {
   padding: 0px 8px 0px 0px;
 }
 
-#micro-measure .website-link {
-  border: none;
+.website-link {
+  border-right: 1px solid #ff0000;
   padding: 0px 8px 0px 0px;
 }
 
