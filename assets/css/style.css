@@ -1,10 +1,14 @@
 body {
-  font-family: Roboto, 'Quicksand', 'NTR', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fefeff;
   overflow-x: hidden;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-left: auto;
   margin-right: auto;
+}
+
+h3 {
+  font-family: 'Quicksand', sans-serif;
 }
 
 #wrapper {
@@ -43,8 +47,8 @@ h1 {
 }
 
 #name {
-  font-weight: bold;
-  font-family: 'Quicksand Medium', 'NTR', sans-serif;
+  font-weight: 700;
+  font-family: 'Quicksand', 'NTR', sans-serif;
   color: #000033;
   width: 100%;
   font-size: 36px;
@@ -83,8 +87,8 @@ h1 {
 }
 
 .main-nav-item {
-  font-weight: 900;
-  font-family: 'Quicksand Medium';
+  font-weight: 700;
+  font-family: 'Quicksand';
   padding: 8px;
 }
 
@@ -136,6 +140,7 @@ h1 {
   flex-direction: row;
   justify-content: start;
   margin-bottom: 32px;
+  padding-right: 16px;
 }
 
 .project-screenshot {}
@@ -163,7 +168,7 @@ h1 {
 img {}
 
 .project-description {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   color: #666;
   margin-bottom: 8px;
 }
@@ -177,7 +182,7 @@ img {}
 
 .link {
   font-size: px;
-  font-family: Roboto, 'Quicksand Medium', Arial;
+  font-family: 'Roboto', 'Quicksand', Arial;
   color: #33333f;
 }
 
@@ -186,7 +191,8 @@ img {}
 }
 
 .github-link-no-web {
-  padding: 0px 8px 0px 0px;
+  padding: 0px 0px 0px -8px;
+  margin-left: -8px;
 }
 
 .website-link {
@@ -209,23 +215,31 @@ a:hover {
 
 #about-me {
   display: none;
-  flex-direction: row;
+  /* flex-direction: row; */
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 16px;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 
-#about-me-desc {
-  padding-left: 16px;
+#about-me-desc {}
+
+#about-me-big {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
 
 #image-container {
-  width: 500px;
+  width: 200px;
+  margin-right: 16px;
 }
 
 img#profile-pic {
-  width: 100%;
-  border-radius: 5px;
+  width: 150px;
 }
 
 @media only screen and (max-width: 960px) {

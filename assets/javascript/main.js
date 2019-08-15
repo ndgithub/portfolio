@@ -17,7 +17,7 @@ $("#port-span").on('click', function () {
 })
 
 $("#about-span").on('click', function () {
-  $("#about-me").css('display', 'flex');
+  $("#about-me").css('display', 'block');
   $("#portfolio").css('display', 'none');
   aboutActive = true;
   portActive = false;
