@@ -161,8 +161,9 @@ h1 {
 .project-title {
   font-size: 24px;
   color: #111;
-  font-weight: bold;
+  font-weight: 700;
   padding-top: 0px;
+  /* font-family: 'Quicksand', 'sans-serif' */
 }
 
 img {}
