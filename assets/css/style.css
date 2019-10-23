@@ -215,6 +215,11 @@ img {}
   padding: 0px 8px 0px 0px;
 }
 
+.video-link {
+  border-left: 1px solid #ff0000;
+  padding: 0px 0px 0px 8px;
+}
+
 a {
   color: inherit;
 }
