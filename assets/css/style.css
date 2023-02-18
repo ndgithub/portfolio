@@ -113,7 +113,7 @@ h1 {
 }
 
 .nav-item-span:hover {
-  color: #99999f;
+  color: #ff0000;
 }
 
 .nav-item {
@@ -182,7 +182,7 @@ h1 {
   color: #111;
   font-weight: 700;
   padding-top: 0px;
-  /* font-family: 'Quicksand', 'sans-serif' */
+  font-family: 'Quicksand', 'sans-serif';
 }
 
 img {
@@ -205,7 +205,7 @@ img {
 .link {
   font-size: px;
   font-family: 'Roboto', 'Quicksand', Arial;
-  color: #33333f;
+  color: #666666;
 }
 
 .github-link {
@@ -218,12 +218,11 @@ img {
 }
 
 .website-link {
-  border-right: 1px solid #ff0000;
+  /* border-right: 1px solid #ff0000; */
   padding: 0px 8px 0px 0px;
 }
 
 .video-link {
-  border-left: 1px solid #ff0000;
   padding: 0px 0px 0px 8px;
 }
 
@@ -237,7 +236,7 @@ a:hover {
 }
 
 .link:hover {
-  color: #99999f;
+  color: #ff0000;
 }
 
 #about-me {
