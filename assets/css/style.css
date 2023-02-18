@@ -5,6 +5,8 @@ body {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
+  overflow: overlay;
 }
 
 h3 {
@@ -344,6 +346,7 @@ img#profile-pic {
     min-width: 250px;
   }
   #right-section {
+    margin-top: 16px;
   }
   .project {
     flex-direction: column;
